@@ -1,0 +1,17 @@
+name: FearStealCore
+version: 1.0.0
+main: com.fearsteal.core.FearStealCore
+api-version: '1.21'
+author: FearStealCore
+description: Configurable fear, blessing, curse and kill-steal gameplay system.
+commands:
+  fsc:
+    description: Opens FearStealCore menus and administration.
+    usage: /fsc [menu|profile|admin|reload|help]
+permissions:
+  fearstealcore.use:
+    description: Allows access to the player menu.
+    default: true
+  fearstealcore.admin:
+    description: Allows access to all FearStealCore administration tools.
+    default: op
