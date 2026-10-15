@@ -1,0 +1,40 @@
+settings:
+  enabled: true
+  opposite-action-chance: 15.0
+  kill-cooldown-seconds: 60
+  same-victim-cooldown-seconds: 3600
+  prevent-same-ip-farming: false
+  transfer-fear-on-kill: true
+  grant-blessing-on-kill: true
+  apply-curse-penalty-on-kill: true
+  penalty-chance: 25.0
+  max-blessings: 3
+  max-curses: 3
+  default-fear: WATER
+messages:
+  prefix: '&8[&5FearSteal&dCore&8] '
+  no-permission: '&cYou do not have permission.'
+  player-only: '&cThis command can only be used by a player.'
+  reload: '&aConfiguration files reloaded.'
+  kill-steal: '&dYou stole &f{fear}&d from &f{victim}&d!'
+  killed: '&cYour fear was stolen by {killer}.'
+  opposite-action: '&eThe opposite action triggered!'
+  cooldown: '&cThis kill cannot reward you yet.'
+  invalid-player: '&cThat player is not online.'
+  saved: '&aPlayer profile updated.'
+traits:
+  fears:
+    WATER: {display: '&bFear of Water', material: HEART_OF_THE_SEA, description: 'Drowning pressure and water-related drawbacks.'}
+    HEIGHTS: {display: '&6Fear of Heights', material: FEATHER, description: 'Falling-related drawbacks.'}
+    MOBS: {display: '&cFear of Mobs', material: ZOMBIE_HEAD, description: 'Hostile-mob pressure.'}
+    DARKNESS: {display: '&8Fear of Darkness', material: COAL, description: 'Night and darkness drawbacks.'}
+    FIRE: {display: '&cFear of Fire', material: BLAZE_POWDER, description: 'Fire-related drawbacks.'}
+    NONE: {display: '&aNo Fear', material: LIME_DYE, description: 'No active fear.'}
+  blessings:
+    SWIFTNESS: {display: '&bSwift Blessing', material: SUGAR, effect: SPEED, amplifier: 0, duration-seconds: 8, description: 'Brief speed after a kill.'}
+    RESILIENCE: {display: '&aResilience Blessing', material: IRON_CHESTPLATE, effect: RESISTANCE, amplifier: 0, duration-seconds: 6, description: 'Brief damage resistance.'}
+    VITALITY: {display: '&dVitality Blessing', material: GOLDEN_APPLE, effect: REGENERATION, amplifier: 0, duration-seconds: 5, description: 'Brief regeneration.'}
+  curses:
+    WEAKNESS: {display: '&cCurse of Weakness', material: WITHER_ROSE, effect: WEAKNESS, amplifier: 0, duration-seconds: 8, description: 'Weakness after a penalty.'}
+    SLOWNESS: {display: '&7Curse of Slowness', material: COBWEB, effect: SLOWNESS, amplifier: 0, duration-seconds: 6, description: 'Slowness after a penalty.'}
+    BAD_OMEN: {display: '&5Curse of Misfortune', material: SPIDER_EYE, effect: UNLUCK, amplifier: 0, duration-seconds: 10, description: 'A short bout of bad luck.'}
